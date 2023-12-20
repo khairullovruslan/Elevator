@@ -32,6 +32,7 @@ public class CallElevator  implements  Call{
         throw new  InvalidNoEmptyElevators();
     }
     public ElevatorEvenFloor checkFreeEvenElevators() throws InvalidNoEmptyElevators {
+        currentForEmpl.setStatus(Status.Свободен);
         return (ElevatorEvenFloor) findFreeEven.free();
 
     }
